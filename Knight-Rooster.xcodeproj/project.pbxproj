@@ -21,6 +21,8 @@
 		C42406A22A1FC2CE00997499 /* RoosterEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42406A12A1FC2CE00997499 /* RoosterEntity.swift */; };
 		C42406A52A1FC3DB00997499 /* GroundEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42406A42A1FC3DB00997499 /* GroundEntity.swift */; };
 		C42406AA2A1FD5CC00997499 /* BackgroundEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42406A92A1FD5CC00997499 /* BackgroundEntity.swift */; };
+		C42406AC2A205DCF00997499 /* TeamComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42406AB2A205DCF00997499 /* TeamComponent.swift */; };
+		C42406AE2A205FD900997499 /* HealthbarComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42406AD2A205FD900997499 /* HealthbarComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		C42406A12A1FC2CE00997499 /* RoosterEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoosterEntity.swift; sourceTree = "<group>"; };
 		C42406A42A1FC3DB00997499 /* GroundEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroundEntity.swift; sourceTree = "<group>"; };
 		C42406A92A1FD5CC00997499 /* BackgroundEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundEntity.swift; sourceTree = "<group>"; };
+		C42406AB2A205DCF00997499 /* TeamComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamComponent.swift; sourceTree = "<group>"; };
+		C42406AD2A205FD900997499 /* HealthbarComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthbarComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,7 @@
 			children = (
 				C42406A32A1FC3C700997499 /* Objects */,
 				C42406A12A1FC2CE00997499 /* RoosterEntity.swift */,
+				C42406AD2A205FD900997499 /* HealthbarComponent.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -103,6 +108,7 @@
 			children = (
 				C42406A62A1FC3E100997499 /* Objects */,
 				C424069B2A1FBDE500997499 /* SpriteComponent.swift */,
+				C42406AB2A205DCF00997499 /* TeamComponent.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -227,9 +233,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C42406A02A1FC22D00997499 /* FightingScene.swift in Sources */,
+				C42406AE2A205FD900997499 /* HealthbarComponent.swift in Sources */,
 				C42406A52A1FC3DB00997499 /* GroundEntity.swift in Sources */,
 				C42406832A1FB99A00997499 /* GameScene.swift in Sources */,
 				C42406852A1FB99A00997499 /* GameViewController.swift in Sources */,
+				C42406AC2A205DCF00997499 /* TeamComponent.swift in Sources */,
 				C42406A22A1FC2CE00997499 /* RoosterEntity.swift in Sources */,
 				C42406AA2A1FD5CC00997499 /* BackgroundEntity.swift in Sources */,
 				C424069A2A1FBD8500997499 /* EntityManager.swift in Sources */,

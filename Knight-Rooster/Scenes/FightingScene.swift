@@ -20,12 +20,12 @@ class FightingScene: SKScene {
         
         let ground = GroundEntity(imageNamed: "ground")
         let background = BackgroundEntity(imageNamed: "background")
-        let playerRooster = RoosterEntity(imageNamed: "rooster/rooster-1/rooster")
-        let aiRooster = RoosterEntity(imageNamed: "rooster/rooster-2/rooster")
+        let playerRooster = RoosterEntity(imageNamed: "rooster/rooster-1/rooster", team: .team1)
+        let aiRooster = RoosterEntity(imageNamed: "rooster/rooster-2/rooster", team: .team2)
         
         // MARK: Configure Entity
         
-        // Player Rooster
+        // Player Rooster Configuration
         if let playerRoosterComponent = playerRooster.component(ofType: SpriteComponent.self) {
             let rooster = playerRoosterComponent.node
             let roosterSize = rooster.size
@@ -42,7 +42,7 @@ class FightingScene: SKScene {
             rooster.physicsBody?.allowsRotation = false
         }
         
-        // AI Rooster
+        // AI Rooster Configuration
         if let aiRoosterComponent = aiRooster.component(ofType: SpriteComponent.self) {
             let rooster = aiRoosterComponent.node
             let roosterSize = rooster.size
@@ -59,7 +59,7 @@ class FightingScene: SKScene {
             rooster.physicsBody?.allowsRotation = false
         }
         
-        //Ground
+        // Ground Configuration
         if let groundComponent = ground.component(ofType: SpriteComponent.self) {
             let groundYPosition = -frame.height / 2 + groundComponent.node.size.height / 2
             let groundSize = groundComponent.node.size
@@ -74,7 +74,7 @@ class FightingScene: SKScene {
             
         }
         
-        // Background
+        // Background Configuration
         if let backgroundComponent = background.component(ofType: SpriteComponent.self) {
             backgroundComponent.node.position = CGPoint(x: 0, y: 0)
             backgroundComponent.node.zPosition = -10

@@ -10,7 +10,8 @@ import SpriteKit
 import Foundation
 
 class RoosterEntity: GKEntity {
-    init(imageNamed: String) {
+    init(imageNamed: String, team: Team) {
+        addComponent(TeamComponent(team: team))
         super.init()
         
         let spriteComponent = SpriteComponent(texture: SKTexture(imageNamed: imageNamed))
